@@ -1,0 +1,2 @@
+# No third-party Python packages are required.
+# Ollama must be installed/running locally and expose its HTTP API on localhost:11434.

@@ -1,0 +1,1700 @@
+{
+  "summary": {
+    "messages_processed": 100,
+    "rule_resolved": 26,
+    "llm_resolved": 0,
+    "model_calls": 0,
+    "never_required_model_call": 26,
+    "fallback_escalations": 74,
+    "zeroing_ok": true,
+    "pending_actions": 0,
+    "flagged": 78,
+    "commitments": 0,
+    "conflicts": 0,
+    "dry_run": true,
+    "model": "qwen3.5"
+  },
+  "decisions": [
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m096"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m072"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m001"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m003"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m112"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m005"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m088"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m064"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m104"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m080"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m044"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m097"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m073"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m113"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m089"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m065"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m008"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m105"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m081"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m041"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m098"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m074"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m015"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m114"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m090"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m066"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m106"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m082"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m026"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m027"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m028"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m099"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m075"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m029"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m030"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m033"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m115"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m091"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m067"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m107"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m083"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m108"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m084"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m034"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m100"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m076"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m038"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m116"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m092"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m068"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m051"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m109"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m085"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m010"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m101"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m077"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m040"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m057"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m117"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m069"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m093"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m035"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "Untrusted email content attempts to direct the assistant toward a risky or unauthorized action.",
+      "decision_source": "rule",
+      "security": {
+        "flag": "prompt_injection",
+        "attempted": [
+          "automated-agent directive",
+          "assistant.*(?:must|should)"
+        ]
+      },
+      "model_called": false,
+      "message_id": "m017"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "Untrusted email content attempts to direct the assistant toward a risky or unauthorized action.",
+      "decision_source": "rule",
+      "security": {
+        "flag": "prompt_injection",
+        "attempted": [
+          "system notice for automated assistants",
+          "ignore (?:all )?previous instructions",
+          "forward .* to .*@",
+          "delete (?:this|the) message"
+        ]
+      },
+      "model_called": false,
+      "message_id": "m024"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m049"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m061"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m086"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m062"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m110"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m036"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m042"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m078"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m102"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m021"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m013"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m118"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m070"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "Untrusted email content attempts to direct the assistant toward a risky or unauthorized action.",
+      "decision_source": "rule",
+      "security": {
+        "flag": "phishing_or_social_engineering",
+        "attempted": [
+          "verify .*credentials",
+          "password"
+        ]
+      },
+      "model_called": false,
+      "message_id": "m045"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m094"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m059"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m012"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m039"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m053"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m087"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m063"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m023"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m111"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m018"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m016"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m046"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m019"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m043"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m103"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m079"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m048"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "Untrusted email content attempts to direct the assistant toward a risky or unauthorized action.",
+      "decision_source": "rule",
+      "security": {
+        "flag": "prompt_injection",
+        "attempted": [
+          "forward .* to .*@"
+        ]
+      },
+      "model_called": false,
+      "message_id": "m047"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m055"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m119"
+    },
+    {
+      "disposition": "escalate",
+      "reason": "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}",
+      "draft": null,
+      "evidence_message_ids": [],
+      "proposed_action": null,
+      "commitments": [],
+      "decision_source": "fallback",
+      "model_called": false,
+      "message_id": "m095"
+    },
+    {
+      "disposition": "archive",
+      "reason": "Routine automated notification or informational mail with no requested action.",
+      "decision_source": "rule",
+      "security": null,
+      "model_called": false,
+      "message_id": "m071"
+    }
+  ],
+  "pending_actions": [],
+  "flagged": [
+    {
+      "message_id": "m096",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m072",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m001",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m003",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m112",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m005",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m088",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m064",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m080",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m097",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m065",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m008",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m105",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m081",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m041",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m098",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m074",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m015",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m114",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m090",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m066",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m026",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m027",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m028",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m075",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m029",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m030",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m067",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m107",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m083",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m108",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m034",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m076",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m038",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m092",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m068",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m051",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m109",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m085",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m010",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m101",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m077",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m040",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m057",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m117",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m093",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m035",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m017",
+      "attempted": [
+        "automated-agent directive",
+        "assistant.*(?:must|should)"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m024",
+      "attempted": [
+        "system notice for automated assistants",
+        "ignore (?:all )?previous instructions",
+        "forward .* to .*@",
+        "delete (?:this|the) message"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m049",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m061",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m086",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m036",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m042",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m078",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m013",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m118",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m070",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m045",
+      "attempted": [
+        "verify .*credentials",
+        "password"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m094",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m059",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m012",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m039",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m053",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m087",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m111",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m018",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m016",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m046",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m019",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m043",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m103",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m079",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m048",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m047",
+      "attempted": [
+        "forward .* to .*@"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m055",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m119",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    },
+    {
+      "message_id": "m095",
+      "attempted": [
+        "The local model could not safely resolve this message: Ollama HTTP 404: {\"error\":\"model 'qwen3.5' not found\"}"
+      ],
+      "system_did": "Refused/flagged; no action taken on the requested operation.",
+      "preserved": true
+    }
+  ],
+  "commitments": [],
+  "conflicts": []
+}

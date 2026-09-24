@@ -1,9 +1,9 @@
 {
-  "student": "Pawan",
-  "repo": "<public-github-repository-url>",
+  "student": "Pawan Ratwani-cert-aai-2026-06-0064",
+  "repo": "<https://github.com/pawan-ratwani/inboxHero>",
   "system": {
     "framework": "none",
-    "model": "Ollama qwen3.5 for context-dependent classification, drafting, and thread reasoning; deterministic rules handle high-confidence cases before any model call.",
+    "model": "Provider/model/endpoint are loaded by config.py from INBOXHERO_MODEL_* environment variables; default is Ollama qwen3.5. Deterministic rules handle high-confidence cases before any model call.",
     "messages_processed": 100,
     "rule_handled": "runtime-measured; reported in each completed run",
     "dispositions": [

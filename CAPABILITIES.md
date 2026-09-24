@@ -1,7 +1,7 @@
 # CAPABILITIES.md — inboxHero
 
-**Student:** Pawan  
-**Repository:** `<public-github-repository-url>`
+**Student:** Pawan Ratwani-cert-aai-2026-06-0064  
+**Repository:** `<https://github.com/pawan-ratwani/inboxHero>`
 
 Run one capability at a time:
 
@@ -26,7 +26,7 @@ inboxHero is a local-only mock-inbox agent. It processes the supplied 100-messag
 
 - **Framework: none.** The system is a deliberately small Python orchestration layer rather than a CrewAI or Google ADK graph. The important control flow is explicit: deterministic routing first, then model reasoning where needed, then retrieval/evidence checks, then disposition and the action-safety gate. This keeps the security boundary, persistence and audit behavior easy to test and inspect.
 
-- **Model: local Ollama `qwen3.5`.** The assignment requires a local model. The model is used only where language/context reasoning adds value; obvious receipts, newsletters, notifications and other high-confidence cases can be handled without a model call. The run records whether each decision came from a rule or the model and reports how many messages never required a model call.
+- **Model: configured through `config.py`.** The assignment requires a local model. The model is used only where language/context reasoning adds value; obvious receipts, newsletters, notifications and other high-confidence cases can be handled without a model call. The run records whether each decision came from a rule or the model and reports how many messages never required a model call.
 
 - **Retrieval: thread-walk.** The inbox already provides `thread_id`, so context-dependent work retrieves all messages in the relevant thread and orders them chronologically. This is more directly grounded in the mock mail store than introducing an embedding index for a task whose primary context boundary is already explicit. If required information is not present in the inbox/thread, the system says it is unavailable and does not invent or draft the missing fact. Every evidence id must correspond to a message actually retrieved.
 

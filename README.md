@@ -27,16 +27,37 @@ python main.py --all
 
 The default `python main.py` runs a completed inbox pass and produces the dashboard and Part 8 artifacts.
 
-## Model
+## Model configuration
 
-The assignment target is local Ollama with `qwen3.5`:
+The model provider is **not hardcoded in the application**. Runtime model settings are loaded by `config.py` from environment variables, with an optional local `.env` file. Environment variables take precedence.
+
+Default configuration preserves the assignment target:
+
+```text
+INBOXHERO_MODEL_PROVIDER=ollama
+INBOXHERO_MODEL_NAME=qwen3.5
+INBOXHERO_MODEL_BASE_URL=http://127.0.0.1:11434
+INBOXHERO_MODEL_API_KEY=
+INBOXHERO_MODEL_TIMEOUT=30
+```
+
+For Ollama:
 
 ```bash
 ollama serve
 ollama pull qwen3.5
 ```
 
-No real email account, SMTP service, webhook, or external delivery is used. If Ollama is unavailable, the application fails safe for context-dependent decisions by escalating rather than inventing a result.
+The model client currently supports `ollama` and `openai-compatible` providers. For an OpenAI-compatible endpoint, set for example:
+
+```text
+INBOXHERO_MODEL_PROVIDER=openai-compatible
+INBOXHERO_MODEL_NAME=<model-name>
+INBOXHERO_MODEL_BASE_URL=https://<provider-host>
+INBOXHERO_MODEL_API_KEY=<api-key>
+```
+
+No real email account, SMTP service, webhook, or external delivery is used. If the configured model provider is unavailable or fails, the application fails safe for context-dependent decisions by escalating rather than inventing a result.
 
 ## Capabilities
 

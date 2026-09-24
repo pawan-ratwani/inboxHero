@@ -5,7 +5,7 @@
 - Input: `inbox.json`.
 - Output sends: `outbox/`, one file per approved message.
 - No real email account, SMTP, webhook, or external delivery.
-- Model: local Ollama `qwen3.5` for context-dependent classification/drafting only.
+- Model: provider, model name, endpoint and optional API key are loaded through `config.py` from `INBOXHERO_MODEL_*` environment variables; the default configuration targets local Ollama `qwen3.5`.
 - Framework: none. The project uses Python standard-library components to keep routing, safety gates, persistence, and audit behavior explicit and testable.
 
 ## Inbox assumptions
@@ -28,7 +28,7 @@ Every message receives exactly one:
 A completed run is valid only when the number of decisions equals the number of input messages, every input ID appears exactly once, every disposition is valid, and every decision has a non-empty reason.
 
 ## Routing
-High-confidence obvious cases are resolved by deterministic rules before any model call. Context-dependent cases are sent to local Ollama `qwen3.5`. The run records `decision_source` and `model_called`; the summary reports how many messages never required a model call.
+High-confidence obvious cases are resolved by deterministic rules before any model call. Context-dependent cases are sent through the configured model provider. The default is local Ollama `qwen3.5`; provider settings are loaded by `config.py`. The run records `decision_source` and `model_called`; the summary reports how many messages never required a model call.
 
 ## Context retrieval
 Retrieval method: `thread_walk`. For context-dependent work, all messages in the same `thread_id` are retrieved from the mail store and ordered chronologically. Evidence IDs in drafts/commitments are verified against the mail store and the retrieved context. If required information is absent from the inbox, the system says so and drafts nothing.

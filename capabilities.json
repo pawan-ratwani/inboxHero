@@ -1,0 +1,123 @@
+{
+  "student": "Pawan",
+  "repo": "<public-github-repository-url>",
+  "system": {
+    "framework": "none",
+    "model": "Ollama qwen3.5 for context-dependent classification, drafting, and thread reasoning; deterministic rules handle high-confidence cases before any model call.",
+    "messages_processed": 100,
+    "rule_handled": "runtime-measured; reported in each completed run",
+    "dispositions": [
+      "reply",
+      "archive",
+      "defer",
+      "delegate",
+      "escalate"
+    ],
+    "retrieval": "thread-walk",
+    "irreversible": [
+      "send",
+      "delete"
+    ],
+    "reversible": [
+      "draft_reply",
+      "archive",
+      "defer",
+      "delegate",
+      "escalate"
+    ],
+    "gate": "both",
+    "preference_demo": "m041: do not schedule meetings before 11:00 AM; affected message m043"
+  },
+  "capabilities": [
+    {
+      "id": "R1",
+      "name": "Zero the inbox",
+      "tier": "B",
+      "claim": "Assigns every message exactly one disposition (reply/archive/defer/delegate/escalate) with a one-line reason, leaving none untouched.",
+      "command": "python main.py --cap R1",
+      "observable": "Prints a disposition and reason for all 100 messages, reports rule-resolved versus model-resolved messages, and writes the completed run decisions.",
+      "evidence": "runs/<timestamp>/run.json, decision records containing one entry per message id and a zero unresolved count."
+    },
+    {
+      "id": "R2",
+      "name": "Grounded reply",
+      "tier": "B",
+      "claim": "Drafts a reply using verified earlier messages from the same thread and records the message ids used as evidence.",
+      "command": "python main.py --cap R2 --msg m008",
+      "observable": "Produces a draft for m008 only when the required information is present in its thread, and records m003 and m008 as retrieved evidence without exposing credentials unnecessarily.",
+      "evidence": "runs/<timestamp>/run.json and audit/trace records showing retrieved message ids and the draft evidence ids."
+    },
+    {
+      "id": "R3",
+      "name": "Gate the irreversible",
+      "tier": "C",
+      "claim": "Never sends or deletes without explicit per-action approval; dry-run shows the proposed irreversible actions without performing them.",
+      "command": "python main.py --cap R3 --dry-run",
+      "observable": "Prints every send/delete it WOULD perform and reports zero outbox writes in dry-run; execute mode asks for approval before each irreversible action.",
+      "evidence": "runs/<timestamp>/audit.jsonl with proposed action, human decision, and result for each gated action."
+    },
+    {
+      "id": "R4",
+      "name": "Persistent preference",
+      "tier": "C",
+      "claim": "Records an authorized standing preference and applies it on a later run after the original process has fully exited.",
+      "command": "python main.py --cap R4",
+      "observable": "Persists m041's no-meetings-before-11:00 preference, exits, reloads it in a fresh process, and applies it when processing m043's 09:00 meeting proposal.",
+      "evidence": "memory.json between runs plus run records showing m041 as the preference source and m043 as the affected message."
+    },
+    {
+      "id": "R5",
+      "name": "Refuse embedded instructions",
+      "tier": "C",
+      "claim": "Treats assistant-directed instructions inside email as untrusted, refuses hostile requested actions, flags the message, preserves it, and reports the attempted action.",
+      "command": "python main.py --cap R5",
+      "observable": "Flags known hostile messages such as m017, m024, and m047; performs no external forwarding/deletion on their behalf and writes no corresponding outbox message.",
+      "evidence": "runs/<timestamp>/audit.jsonl and security records containing the message id, attempted action, refusal, and preservation result."
+    },
+    {
+      "id": "R6",
+      "name": "Dashboard",
+      "tier": "C",
+      "claim": "Generates a reproducible three-pane view of pending actions, flagged items, and commitments, with verified evidence and surfaced conflicts.",
+      "command": "python main.py --cap R6",
+      "observable": "Writes dashboard.html with exactly three panes and shows commitment source ids and scheduling conflicts derived from the completed run.",
+      "evidence": "runs/<timestamp>/dashboard.html and dashboard data generated from the same run artifacts."
+    },
+    {
+      "id": "X1",
+      "name": "Unread sender lookup",
+      "tier": "A",
+      "claim": "Returns the unread messages from a specified sender in one lookup, with their ids, subjects, and timestamps.",
+      "command": "python main.py --cap X1 --sender raghav@paperjet.io",
+      "observable": "Prints only unread messages matching the requested sender and their basic metadata; no model call is required.",
+      "evidence": "Command output plus the source inbox records used for the lookup."
+    },
+    {
+      "id": "X2",
+      "name": "Daily digest",
+      "tier": "B",
+      "claim": "Produces a concise daily view of what needs the user's attention, what can wait, and what the system already handled automatically.",
+      "command": "python main.py --cap X2",
+      "observable": "Writes a readable daily_digest.md with Needs You, Can Wait, and Auto-Handled sections, with message ids supporting each item.",
+      "evidence": "runs/<timestamp>/daily_digest.md generated from the completed run decisions, flags, pending actions, and commitments."
+    },
+    {
+      "id": "X3",
+      "name": "Commitment tracker",
+      "tier": "B",
+      "claim": "Extracts meetings, deadlines, obligations, and dependencies into a structured list and cites the messages that establish each commitment.",
+      "command": "python main.py --cap X3",
+      "observable": "Writes commitments.json and commitments.md containing normalized commitment records, verified source message ids, status, and conflicts.",
+      "evidence": "runs/<timestamp>/commitments.json and commitments.md; at least one multi-message commitment is produced when supported by the inbox."
+    },
+    {
+      "id": "X4",
+      "name": "Open-question thread summary",
+      "tier": "B",
+      "claim": "Summarises a long thread into its current state, decisions already made, blocking issue, and unresolved question using chronological thread evidence.",
+      "command": "python main.py --cap X4 --thread t-launch",
+      "observable": "Writes a readable summary for t-launch that identifies the current open question and cites the thread message ids used to derive it.",
+      "evidence": "runs/<timestamp>/thread_summaries/t-launch.md and retrieval records showing the chronological thread walk."
+    }
+  ]
+}

@@ -62,3 +62,9 @@ A completed run produces `dashboard.html` from run JSON artifacts. Exactly three
 1. Pending actions — irreversible actions awaiting human approval, with message, action, and why human approval is required.
 2. Flagged — refused actions including hostile messages, phishing, and ungrounded requests, with attempted action and system response.
 3. Commitments — dates/deadlines/obligations rendered as a calendar. Every commitment has verified source message IDs. At least one multi-message commitment is expected when supported by the inbox. Conflicts at the same time are explicitly surfaced.
+
+## Part 8 capabilities and tiers
+- Tier A: `X1` unread sender lookup — one deterministic lookup and output.
+- Tier B: `X2` daily digest, `X3` commitment tracker, `X4` open-question thread summary — each combines multiple run artifacts or multiple messages.
+- Tier C: `R3` irreversible-action gate, `R4` persistent preference, `R5` hostile-instruction refusal, `R6` reproducible dashboard — these involve human-in-the-loop safety, memory, refusal/recovery behavior, or cross-artifact planning.
+- Every capability has a single command and an observable output documented in `CAPABILITIES.md` and `capabilities.json`.

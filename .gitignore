@@ -1,2 +1,6 @@
-./Lib/
-./Scripts/
+__pycache__/
+*.pyc
+memory.json
+outbox/
+runs/
+.DS_Store

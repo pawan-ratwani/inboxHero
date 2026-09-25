@@ -22,7 +22,7 @@ from urllib import request, error
 from config import OLLAMA_BASE_URL, OLLAMA_MODEL, OLLAMA_TIMEOUT
 
 ROOT = Path(__file__).resolve().parent
-INBOX_PATH = ROOT.parent / "inbox.json"
+INBOX_PATH = ROOT / "inbox.json"
 MEMORY_PATH = ROOT / "memory.json"
 RUNS_PATH = ROOT / "runs"
 OUTBOX_PATH = ROOT / "outbox"
@@ -336,9 +336,87 @@ def commitments(messages: list[dict[str, Any]], decisions: list[dict[str, Any]])
 
 
 def write_audit(path: Path, events: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         for e in events:
             f.write(json.dumps(e, ensure_ascii=False) + "\n")
+
+
+def write_trace(run: dict[str, Any], run_dir: Path) -> Path:
+    """Write an append-style JSONL trace for the completed run.
+
+    The trace contains exactly one `decision` event per input message, plus
+    retrieval, flag, pending-action, and run lifecycle events.  A copy is
+    written both inside the run directory and at the project root so the
+    latest full-run trace is easy to find.
+    """
+    events: list[dict[str, Any]] = [{
+        "event": "run_started",
+        "run_id": run["run_id"],
+        "messages_processed": run["messages_processed"],
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }]
+
+    for retrieval in run.get("retrievals", []):
+        events.append({
+            "event": "retrieval",
+            "run_id": run["run_id"],
+            "message_id": retrieval["message_id"],
+            "method": retrieval["method"],
+            "retrieved_message_ids": retrieval["retrieved_message_ids"],
+        })
+
+    # Contract: one decision event for every input message.
+    for d in run.get("decisions", []):
+        events.append({
+            "event": "decision",
+            "run_id": run["run_id"],
+            "message_id": d["message_id"],
+            "disposition": d["disposition"],
+            "reason": d.get("reason", ""),
+            "decision_source": d.get("decision_source"),
+            "model_called": bool(d.get("model_called")),
+            "security_flag": d.get("security_flag"),
+            "evidence_message_ids": d.get("evidence_message_ids", []),
+        })
+
+    for item in run.get("flagged", []):
+        events.append({
+            "event": "flag",
+            "run_id": run["run_id"],
+            "message_id": item["message_id"],
+            "flag": item.get("flag"),
+            "attempted_action": item.get("attempted_action", []),
+            "system_response": item.get("system_response"),
+            "message_preserved": True,
+        })
+
+    for item in run.get("pending_actions", []):
+        events.append({
+            "event": "pending_action",
+            "run_id": run["run_id"],
+            "message_id": item["message_id"],
+            "proposed_action": item.get("proposed_action"),
+            "why_human": item.get("why_human"),
+        })
+
+    events.append({
+        "event": "run_completed",
+        "run_id": run["run_id"],
+        "zeroing_invariant": run.get("zeroing_invariant", False),
+        "metrics": run.get("metrics", {}),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    })
+
+    text = "".join(json.dumps(e, ensure_ascii=False) + "\n" for e in events)
+    run_trace = run_dir / "trace.jsonl"
+    run_trace.parent.mkdir(parents=True, exist_ok=True)
+    run_trace.write_text(text, encoding="utf-8")
+
+    # Root-level trace is always the trace from the latest completed run.
+    root_trace = ROOT / "trace.jsonl"
+    root_trace.write_text(text, encoding="utf-8")
+    return root_trace
 
 
 def build_run(messages: list[dict[str, Any]], run_dir: Path) -> dict[str, Any]:
@@ -346,7 +424,7 @@ def build_run(messages: list[dict[str, Any]], run_dir: Path) -> dict[str, Any]:
     counts = Counter(d["disposition"] for d in decisions)
     unresolved = [m["id"] for m, d in zip(messages, decisions) if d.get("disposition") not in DISPOSITIONS or not d.get("reason")]
     rule_resolved = sum(1 for d in decisions if d.get("decision_source") == "rule")
-    llm_resolved = len(decisions) - rule_resolved
+    llm_resolved = sum(1 for d in decisions if d.get("decision_source") == "model")
     comms = commitments(messages, decisions)
     flags = []
     pending = []
@@ -470,9 +548,20 @@ def audit_for_run(run: dict[str, Any], run_dir: Path, dry_run: bool, execute: bo
 
 
 def new_run(messages: list[dict[str, Any]]) -> tuple[dict[str, Any], Path]:
-    run_dir = RUNS_PATH / now_stamp(); run_dir.mkdir(parents=True, exist_ok=True)
+    # The assignment requires these artifacts to exist after a run.  The outbox
+    # directory is created even when no send is approved; actual message files
+    # are written there only after an explicit irreversible-action approval.
+    OUTBOX_PATH.mkdir(parents=True, exist_ok=True)
+
+    run_dir = RUNS_PATH / now_stamp()
+    run_dir.mkdir(parents=True, exist_ok=True)
     run = build_run(messages, run_dir)
     audit_for_run(run, run_dir, dry_run=True)
+
+    # audit_for_run may add grounded draft/evidence information to decisions,
+    # so persist the final run and then generate the trace from that final state.
+    save_json(run_dir / "run.json", run)
+    write_trace(run, run_dir)
     return run, run_dir
 
 
